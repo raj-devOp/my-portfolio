@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Signup Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+
+<div class="container1">
+
+<header>
+   <h1>Welcome to Carpool</h1>
+</header>
+  
+<article>
+ 
+<h2>Sign up Form</h2>
+
+<form action="regdb.php" method="post" enctype="multipart/form-data" autocomplete="off">
+  <div class="imgcontainer">
+    <img src="images.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" autocomplete="new-password" required>
+    <label><b>Confirmed password</b></label>
+    <input type="password" placeholder="Retype Password" name="confirmed_password" autocomplete="new-password" required>
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter email address" name="email" required>
+
+    <img src="captcha.php">
+    <input type="text" placeholder="Enter above numbers" name="number" >
+    <input name="Signup" id="Signup" type="submit" value = "Sign Up"/>
+
+    
+    <br>  
+    
+      
+  <span class="auser">Already user? <a href="login.html">Login</a></span>
+
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+   
+  </div>
+</form>
+ 
+ 
+</article>
+
+<footer>Copyright &copy; rg5319d@gre.ac.uk</footer>
+
+</div>
+
+</body>
+</html>
+

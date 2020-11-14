@@ -1,0 +1,82 @@
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+input[type=text], input[type=password], input[type=email],input[type=confirmed_password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 10%;
+}
+
+.container {
+    padding: 16px;
+}
+  
+    
+span.sign, span.auser, span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.sign, span.auser, span.submit {
+       display: block;
+       float: none;
+    }
+    
+}
+
+
+
+div.container1 {
+    width: 100%;
+    border: 1px solid grey;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: grey;
+    clear: left;
+    text-align: center;
+}
+
+
+article {
+    margin-left: 20px;
+    border-left: 1px solid gray;
+    margin-right: 20px;
+    border-right: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
