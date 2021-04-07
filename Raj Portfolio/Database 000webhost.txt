@@ -1,0 +1,5 @@
+DB Name = id15436869_rajenterprise	
+DB User = id15436869_rajenterpriseuser	
+DB Host = localhost
+
+password = !EnterpriseR@16
