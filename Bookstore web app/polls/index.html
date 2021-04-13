@@ -1,0 +1,21 @@
+{% extends 'bookstore/base.html' %}
+
+{% block body %}
+
+<h2>Here are the list of Authors</h2>
+
+<h1>{{ author.author_firstname }}</h1>
+
+
+
+<ul>
+    {% for author in latest_author_list %}
+    <li>
+     <a href="/bookstore/{{ author.id }}/">{{ author.author_firstname }} - {{ author.author_lastname }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+

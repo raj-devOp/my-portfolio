@@ -1,0 +1,25 @@
+{% extends 'bookstore/base.html' %}
+
+{% block title %}Author Details {% endblock %}
+
+{% block body %}
+
+
+    <h1>
+     Author's Name: {{ author.author_firstname}} - {{ author.author_lastname}}
+    </h1>
+
+    <h3>{{ author.author_firstname }} </h3>
+    <h4>{{ author.book_name }} </h4>
+
+    {% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+
+    <ul>
+        {% for book in author.book_set.all %}
+            <li>{{book.book_name}}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

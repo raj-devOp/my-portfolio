@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookstore Result Page</title>
+
+    {% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family-Satisfy' rel='stylesheet' type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'bookstore/style.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<nav class="navbar navbar-dafault">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'bookstore:index' %}"> Bookstore</a>
+        </div>
+
+    </div>
+</nav>
+
+<body>
+
+<h1>{{ author.author_firstname }}</h1>
+
+<ul>
+{% for book in author.book_set.all %}
+    <li>{{ book.book_name }} -- {{ book.book }} book{{ book.book|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'book:detail' author.id %}">Add again?</a>
+
+</body>
+</html>
